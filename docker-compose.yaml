@@ -1,0 +1,12 @@
+# версия docker-compose
+version: '3.8'
+
+# имена и описания контейнеров, которые должны быть развёрнуты
+services:
+
+  web:
+    build: .
+    restart: always
+    ports:
+     - "8000:8000"
+
